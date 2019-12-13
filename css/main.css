@@ -5,3 +5,11 @@ body{
     background-image: url(woodenpizza.jpg);
     background-size: cover;
 }
+.container{
+           text-align: center;
+           display: block;
+           background-color: black;
+           color: white;
+           opacity: 0.75;
+
+}
