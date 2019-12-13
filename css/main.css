@@ -5,12 +5,34 @@ body{
     background-image: url(woodenpizza.jpg);
     background-size: cover;
 }
+.panel{
+
+    background-size: cover;
+    color: white;
+    position: sticky;
+    padding: 50px;
+
+}
+.panel2{
+      background-color: Turquoise;
+}
+
 .container{
            text-align: center;
            display: block;
            background-color: black;
            color: white;
            opacity: 0.75;
+
+}
+.cardpizza{
+           background-image: url(back.jpg);
+}
+.pizzaman{
+  display: block;
+margin-left: auto;
+margin-right: auto;
+width: 50%;
 
 }
 .column {
@@ -26,6 +48,20 @@ body{
   clear: both;
   display: table;
 }
+.img{
+     float:left;
+}
+
+.contact{
+  text-align: center;
+}
+.contact-logo{
+   float:left;
+}
+.prices{
+        background-color: gold;
+        display: none;
+}
 .description{
               text-align: left;
               border-width: medium;
@@ -33,6 +69,10 @@ body{
               font-family: 'Lakki Reddy', cursive;
               font-weight: bolder;
 
+}
+.menuorder{
+  text-align: left;
+  background-color: YellowGreen;
 }
 .crust{
   text-align: left;
@@ -56,6 +96,19 @@ body{
 
 
 }
+.form{
+      background: inherit;
+}
+#pizzaman{
+          float: left;
+          display: block;
+}
+textarea{
+         background: inherit;
+}
+#email{
+       background: inherit;
+}
 .final-order{
         float: center;
         position: absolute;
@@ -71,6 +124,7 @@ body{
         text-align: center;
         display: block;
 }
+/* Style the navigation bar */
 .navbar {
   width: 100%;
   background-color: #555;
@@ -106,6 +160,12 @@ body{
 }
 .row{
      margin-right: 20px;
+}
+.body2{
+
+}
+.hide{
+       display: none;
 }
 .checkoutbtn{
               display: block;
