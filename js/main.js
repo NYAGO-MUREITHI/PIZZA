@@ -219,3 +219,17 @@ $("button#finish").click(function(){
   function addTotal(hawresult,bbqresult,vegresult,margresult){
     return parseInt(hawresult) + parseInt(bbqresult) + parseInt(vegresult) + parseInt(margresult)
   }
+  var result = addTotal(hawresult,bbqresult,vegresult,margresult)
+   if (document.getElementById("delivery").checked) {
+      var result2 = result + 200;
+      $(".price").text(result2);
+      var address = prompt("PLEASE ENTER DELIVERY ADDRESS")
+      alert("OUR RIDER WILL BE IN TOUCH WITH YOU SOON")
+   }else{
+     $(".price").text(result)
+     alert("OUR STORES ARE OPEN FROM 9:00AM - 10:00PM")
+   }
+
+
+ })
+});
