@@ -6,6 +6,7 @@ function Order(size, price, total, quantity){
 }
 $(document).ready(function(){
   $("button#hwncart").click(function(){
+    // vary prices for different sizes with what is selected
     var hwnvalue = $(".hawaiianmenuorder option:selected");
     var hwnsize = hwnvalue.val()
     if(hwnsize === "large"){
