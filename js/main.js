@@ -18,6 +18,7 @@ $(document).ready(function(){
     }else{
       var hwnprice = 0
     }
+    //append price according to size chosen
     if(hwnsize === "large"){
       $("#hwnprice").append("<li>" + hwnprice + "</li>" )
     }else if (hwnsize === "medium") {
@@ -25,6 +26,7 @@ $(document).ready(function(){
     }else{
       $("#hwnprice").append("<li>" + hwnprice + "</li>" )
     }
+    //fuction to get final price by multiplying the price by quantity
     var hawOrder = new Order(hwnsize)
     hawOrder.price.push(hwnprice)
     var quantity = $(".hawaiianquantity option:selected")
