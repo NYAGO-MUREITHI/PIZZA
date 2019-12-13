@@ -13,3 +13,16 @@ body{
            opacity: 0.75;
 
 }
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 30px;
+  margin-left: 50px;
+  margin-right: 100px;
+  padding-right: 30px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
