@@ -71,3 +71,71 @@ $("button#bbqcart").click(function(){
 
 
 });
+$("button#vegcart").click(function(){
+  var vegvalue = $(".vegmenuorder option:selected");
+  var vegsize = vegvalue.val()
+  if(vegsize === "large"){
+    var vegprice = 1000
+  }else if (vegsize === "medium") {
+    var vegprice = 700
+  }else if (vegsize === "small"){
+     var vegprice = 500
+  }else{
+     var vegprice = 0
+  }
+   if(vegsize === "large"){
+     $("#vegprice").append("<li>" + vegprice + "</li>" )
+   }else if (vegsize === "medium") {
+     $("#vegprice").append("<li>" + vegprice + "</li>" )
+   }else{
+     $("#vegprice").append("<li>" + vegprice + "</li>" )
+   }
+   var vegOrder = new Order(vegsize, vegprice)
+   vegOrder.price.push(vegprice)
+   var quantity = $(".veggiequantity option:selected")
+   var newValue = parseInt(quantity.val());
+   function quantiFy(){
+     return vegOrder.price * newValue
+   }
+   var result = quantiFy();
+   alert(result)
+   $(".prod3").text(vegOrder.size + " Veggie pizza")
+
+
+   $(".price3").text( result )
+
+
+});
+$("button#margcart").click(function(){
+  var margvalue = $(".margmenuorder option:selected");
+  var margsize = margvalue.val()
+  if(margsize === "large"){
+    var margprice = 1000
+  }else if (margsize === "medium") {
+    var margprice = 700
+  }else if (margsize === "small"){
+     var margprice = 500
+  }else{
+     var margprice = 0
+  }
+   if(margsize === "large"){
+     $("#marprice").append("<li>" + margprice + "</li>" )
+   }else if (margsize === "medium") {
+     $("#marprice").append("<li>" + margprice + "</li>" )
+   }else{
+     $("#marprice").append("<li>" + margprice + "</li>" )
+   }
+   var marOrder = new Order(margsize, margprice)
+   marOrder.price.push(margprice)
+   var quantity = $(".margaquantity option:selected")
+   var newValue = parseInt(quantity.val());
+   function quantiFy(){
+     return marOrder.price * newValue
+   }
+   var result = quantiFy();
+   $(".prod4").text(marOrder.size + " Margarita pizza")
+   $(".price4").text( result )
+});
+$("button#checkout").click(function(){
+ $(".final-order").fadeIn();
+});
