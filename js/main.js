@@ -25,3 +25,15 @@ $(document).ready(function(){
     }else{
       $("#hwnprice").append("<li>" + hwnprice + "</li>" )
     }
+    var hawOrder = new Order(hwnsize)
+    hawOrder.price.push(hwnprice)
+    var quantity = $(".hawaiianquantity option:selected")
+    var newValue = parseInt(quantity.val());
+    function quantiFy(){
+      return hawOrder.price * newValue
+    }
+    var result = quantiFy();
+    $(".prod1").text(hawOrder.size + " Hawaiian pizza" )
+    $(".price1").text( result )
+
+});
