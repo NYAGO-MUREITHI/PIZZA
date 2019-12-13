@@ -56,3 +56,14 @@ body{
 
 
 }
+.final-order{
+        float: center;
+        position: absolute;
+        display: block;
+        display: none;
+        width: 700px;
+        background-color: #778899;
+        padding: 20px;
+        text-align: center;
+
+}
