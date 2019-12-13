@@ -39,3 +39,20 @@ body{
   background-color: YellowGreen;
 
 }
+#logo{
+      float: left;
+}
+#checkout{
+          text-align: center;
+          background-attachment: scroll;
+          display: block;
+}
+.card-float{
+             display:flex;
+             display: block;
+             margin-top: 10px;
+             padding-left: 300px;
+             padding-bottom: 400px;
+
+
+}
