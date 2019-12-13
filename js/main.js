@@ -18,3 +18,10 @@ $(document).ready(function(){
     }else{
       var hwnprice = 0
     }
+    if(hwnsize === "large"){
+      $("#hwnprice").append("<li>" + hwnprice + "</li>" )
+    }else if (hwnsize === "medium") {
+      $("#hwnprice").append("<li>" + hwnprice + "</li>" )
+    }else{
+      $("#hwnprice").append("<li>" + hwnprice + "</li>" )
+    }
