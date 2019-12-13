@@ -26,3 +26,11 @@ body{
   clear: both;
   display: table;
 }
+.description{
+              text-align: left;
+              border-width: medium;
+              border-color: white;
+              font-family: 'Lakki Reddy', cursive;
+              font-weight: bolder;
+
+}
