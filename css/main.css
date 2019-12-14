@@ -115,10 +115,18 @@ textarea{
         display: block;
         display: none;
         width: 700px;
-        background-color: #778899;
+        background-image: url(smallback.jpg);
+        opacity: 0.9;
+        font-family: 'Anton', sans-serif;
+        font-weight: bolder;
+        background-size: cover;
+        color: white;
         padding: 20px;
         text-align: center;
-
+        top: 80%;
+        bottom: 50%;
+        margin-right: 300px;
+        height: 400px;
 }
 .icons{
         text-align: center;
