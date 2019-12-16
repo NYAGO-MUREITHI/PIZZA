@@ -201,3 +201,17 @@ textarea{
   background-color: #4CAF50;
   color: white;
 }
+.contact{
+         background-color: black;
+         display: flex;
+         padding: 50px;
+         color: white;
+}
+.location{
+          float: left;
+          margin-right: 100px;
+}
+.social-icons{
+              float: right;
+              margin-left: 200px;
+}
