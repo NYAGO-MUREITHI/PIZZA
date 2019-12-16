@@ -179,13 +179,13 @@ textarea{
 }
 .topnav {
   overflow: hidden;
-  background-color: gainsboro;
+  background-color: black;
   opacity: 0.5;
 }
 
 .topnav a {
   float: left;
-  color: black;
+  color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
