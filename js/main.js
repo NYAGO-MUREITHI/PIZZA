@@ -238,5 +238,8 @@ $(document).ready(function(){
     }
 
 
+  });
+  $("#close").click(function(){
+    $(".final-order").fadeOut()
   })
 });
