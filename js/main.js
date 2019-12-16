@@ -230,6 +230,7 @@ $(document).ready(function(){
       var result2 = result + 200;
       $(".price").text(result2);
       var address = prompt("PLEASE ENTER DELIVERY ADDRESS")
+      var contact = prompt("PLEASE ENTER PHONE NUMBER")
       alert("OUR RIDER WILL BE IN TOUCH WITH YOU SOON")
     }else{
       $(".price").text(result)
