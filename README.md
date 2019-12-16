@@ -18,6 +18,9 @@ In case of any issues kindly contact me on : murraygoogz@gmail.com
 ## LINK TO LIVE SITE
 https://nyago-mureithi.github.io/PIZZA/.
 
+## CODEBEAT GRADE
+[![codebeat badge](https://codebeat.co/badges/fa4a1184-e347-4688-85c8-3130570fa04c)](https://codebeat.co/projects/github-com-nyago-mureithi-pizza-master)
+
 ## LICENSING
 MIT License
 Copyright (c) [2019] [NYAGUTHIE MUREITHI]
