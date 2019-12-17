@@ -218,14 +218,16 @@ $(document).ready(function(){
     marOrder.price.push(margprice)
     var quantity = $(".margaquantity option:selected")
     var newValue = parseInt(quantity.val());
+
     function margquantiFy(){
       return marOrder.price * newValue
     }
     var margresult = margquantiFy()
     function addTotal(hawresult,bbqresult,vegresult,margresult){
-      return parseInt(hawresult) + parseInt(bbqresult) + parseInt(vegresult) + parseInt(margresult)
+      return parseInt(hawresult) + parseInt(bbqresult) + parseInt(vegresult) + parseInt(margresult);
     }
     var result = addTotal(hawresult,bbqresult,vegresult,margresult)
+    alert(result)
     if (document.getElementById("delivery").checked) {
       var result2 = result + 200;
       $(".price").text(result2);
@@ -233,7 +235,7 @@ $(document).ready(function(){
       var contact = prompt("PLEASE ENTER PHONE NUMBER")
       alert("OUR RIDER WILL BE IN TOUCH WITH YOU SOON")
     }else{
-      $(".price").text(result)
+      $(".price").append(result)
       alert("OUR STORES ARE OPEN FROM 9:00AM - 10:00PM")
     }
 
